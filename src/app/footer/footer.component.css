@@ -61,10 +61,68 @@
 .github {
   position: absolute;
   color: white;
+  z-index: 1000;
 }
 
 .linkedin {
   border: 1px solid white;
   padding: 4px;
 }
+
+/* start of animation of top boba row */
+@keyframes topBobaAnimation {
+  0%   {transform: translateY(0) rotate(0)}
+  25%  {transform: translateY(20px) rotate(90deg)}
+  50%  {transform: translateY(50px) rotate(270deg)}
+  75%  {transform: translateY(25px) rotate(300deg)}
+  100% {transform: translateY(0) translate(360deg)}
+}
+
+.b1,
+.b3,
+.b5 {
+  animation: topBobaAnimation 20s infinite;
+}
+
+@keyframes topRowBobaImages {
+  0%   {transform: translateY(0)}
+  25%  {transform: translateY(20px)}
+  50%  {transform: translateY(50px)}
+  75%  {transform: translateY(25px)}
+  100% {transform: translateY(0)}
+}
+
+.linkedin {
+  animation: topRowBobaImages 20s infinite;
+}
+/* end of animation of top boba row */
+
+/* start of animation of bottom boba row */
+@keyframes bottomBobaAnimation {
+  0%   {transform: translateY(0) rotate(0)}
+  25%  {transform: translateY(-10px) rotate(90deg)}
+  50%  {transform: translateY(-30px) rotate(270deg)}
+  75%  {transform: translateY(-10px) rotate(300deg)}
+  100% {transform: translateY(0) translate(360deg)}
+}
+
+.b2,
+.b4 {
+  animation: bottomBobaAnimation 20s infinite;
+}
+
+@keyframes bottomRowBobaImages {
+  0%   {transform: translateY(0)}
+  25%  {transform: translateY(-10px)}
+  50%  {transform: translateY(-30px)}
+  75%  {transform: translateY(-10px)}
+  100% {transform: translateY(0)}
+}
+
+.resume,
+.github {
+  animation: bottomRowBobaImages 20s infinite;
+}
+/* end of animation of bottom boba row */
+
 
