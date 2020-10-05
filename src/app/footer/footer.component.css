@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 160px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 0 0 90px 90px;
+  background: rgb(175,98,31);
+  background: linear-gradient(180deg, rgba(175,98,31,0.639093137254902) 0%, rgba(191,118,70,1) 100%);
+}
+
+.boba-row, a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.boba-pearls:hover,
+.resume:hover ~ .b2,
+.linkedin:hover ~ .b3,
+.github:hover ~ .b4 {
+  background-color: white;
+  border-radius: 50px;
+}
+
+.resume,
+.linkedin,
+.github,
+.b2,
+.b3,
+.b4 {
+  cursor: pointer;
+}
+
+
+.boba-pearls {
+  width: 80px;
+}
+
+.boba1,
+.boba3,
+.boba5 {
+  margin-bottom: 5%;
+}
+
+.boba2,
+.boba4 {
+  margin-top: 5%;
+}
+
+.boba2,
+.boba3,
+.boba4 {
+  position: relative;
+}
+
+.resume,
+.linkedin,
+.github {
+  position: absolute;
+  color: white;
+}
+
+.linkedin {
+  border: 1px solid white;
+  padding: 4px;
+}
+

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.header {
+  position: relative;
+  width: 95%;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 10px 10px 0 0;
+  margin-top: 90px;
+  background: rgb(182,193,194);
+  background: linear-gradient(342deg, rgba(182,193,194,0.639093137254902) 0%, rgba(107,122,125,0.6054796918767507) 50%, rgba(182,193,194,1) 100%);
+}
+
+.straw {
+  position: absolute;
+  width: 60px;
+  height: 90px;
+  right:10%;
+  transform: skew(-5deg);
+  border: 1px solid black;
+  background: rgb(0,0,0);
+  background: linear-gradient(275deg, rgba(0,0,0,0.639093137254902) 0%, rgba(51,43,43,1) 100%);
+}
