@@ -2,9 +2,11 @@
   display: flex;
   width: 95%;
   height: 80vh;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-bottom: 0;
   margin: auto;
   background-color: white;
+  background-image: linear-gradient(white 0%, white 80%, #FFF5BA);
 }
 
 .intro-message {
