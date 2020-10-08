@@ -1,0 +1,190 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectBoxes {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: auto;
+  width: 85%;
+  margin-bottom: 40px;
+}
+
+.firstProject img,
+.secondProject img,
+.thirdProject img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  mask-image: linear-gradient(linear, right, rgba(255,255,255,0) 0%, #000000 50%, rgba(255,255,255,0) 100%);
+  border: 2px solid black;
+  -webkit-box-shadow: 0 6px 6px 0 #696969;
+  box-shadow: 0 6px 6px 0 #696969;
+}
+
+.firstProject,
+.secondProject,
+.thirdProject {
+  position: relative;
+  height: auto;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 17px;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+.overlay > * {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.overlayText {
+  text-align: center;
+  color: white;
+  padding-left: 6%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+.buttons a {
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.overlayText,
+.buttons a {
+  font-size: 25px;
+}
+
+.buttons a:hover {
+  background-color: white;
+  color: black;
+  transition: .5s ease;
+}
+
+.buttons a:first-child {
+  margin-right: 5px;
+}
+
+.buttons a:last-child {
+  margin-left: 5px;
+}
+
+.firstProject:hover .overlay,
+.secondProject:hover .overlay,
+.thirdProject:hover .overlay {
+  opacity: 1;
+}
+
+.title {
+  text-align: center;
+  margin: 40px 0;
+  font-weight: bold;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1040px) {
+  .overlayText,
+  .buttons a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .overlayText {
+    padding: 2%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .overlayText,
+  .buttons a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .buttons a {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .buttons {
+    padding: 2%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .overlay {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    background-image: none;
+  }
+
+  .firstProject img,
+  .secondProject img,
+  .thirdProject img {
+    height: 200px;
+  }
+
+  .buttons {
+    padding-right: 0;
+  }
+
+  .buttons a {
+    height: auto;
+    border: 1px solid black;
+  }
+
+  .overlayText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .overlay > * {
+    flex-grow: 0;
+    width: auto;
+  }
+
+  .overlayText,
+  .buttons a {
+    color: black;
+  }
+
+  .buttons a:hover {
+    color: white;
+    background-color: black;
+  }
+}

@@ -127,4 +127,16 @@
 }
 /* end of animation of bottom boba row */
 
+@media only screen and (max-width: 768px) {
+  .container {
+    height: 225px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .boba1,
+  .boba5 {
+    display: none;
+  }
+}
 

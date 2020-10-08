@@ -20,7 +20,8 @@
 .topComment {
   position: absolute;
   left: 1%;
-  top: -68%;
+  top: -105%;
+  font-size: 50px;
 }
 
 .topLeftDash,
@@ -64,3 +65,49 @@
   background: linear-gradient(275deg, rgba(0,0,0,0.639093137254902) 0%, rgba(51,43,43,1) 100%);
   box-shadow: 0px 1px 1px rgba(000,000,000,0.8), inset 1px 2px 0px rgba(255,255,255,0.8);
 }
+
+@media only screen and (min-width: 1000px) {
+  .topComment {
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .topComment {
+    font-size: 40px;
+    top: -90%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .topComment {
+    font-size: 30px;
+    top: -70%;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .responsiveBreak {
+    display: block;
+  }
+
+  .topComment {
+    top: -155%;
+  }
+
+  .rightHandText {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .rightHandText {
+    margin-left: 0;
+  }
+
+  .topComment {
+    font-size: 25px;
+    top: -125%;
+  }
+}
+

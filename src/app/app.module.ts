@@ -10,6 +10,10 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { IntroComponent } from './body/intro/intro.component';
 import { ReceiptComponent } from './body/receipt/receipt.component';
+import { ReceiptHeadingComponent } from './body/receipt/receipt-heading/receipt-heading.component';
+import { TechnologiesComponent } from './body/receipt/technologies/technologies.component';
+import { ProjectsComponent } from './body/receipt/projects/projects.component';
+import { CostComponent } from './body/receipt/cost/cost.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { ReceiptComponent } from './body/receipt/receipt.component';
     BodyComponent,
     FooterComponent,
     IntroComponent,
-    ReceiptComponent
+    ReceiptComponent,
+    ReceiptHeadingComponent,
+    TechnologiesComponent,
+    ProjectsComponent,
+    CostComponent
   ],
   imports: [
     BrowserModule,
