@@ -24,4 +24,37 @@
 .name-message {
   font-weight: bold;
   margin-bottom: 40px;
+  font-size: 60px;
 }
+
+.intro-content {
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 920px) {
+  .name-message {
+    font-size: 2.9em;
+  }
+
+  .intro-content {
+    font-size: 2.1em;
+  }
+}
+
+@media only screen and (max-width: 651px) {
+  .name-message {
+    font-size: 2.2em;
+  }
+
+  .intro-content {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .intro-content {
+    font-size: 1.2em;
+  }
+}
+
+
