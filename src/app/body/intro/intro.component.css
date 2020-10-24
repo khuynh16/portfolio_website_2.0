@@ -1,7 +1,7 @@
 .container {
   display: flex;
   width: 95%;
-  height: 80vh;
+  /* height: 70vh; */
   border: 2px solid black;
   border-bottom: 0;
   margin: auto;
@@ -17,21 +17,42 @@
   align-items: center;
   width: 70%;
   margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .name-message {
   font-weight: bold;
   margin-bottom: 40px;
-  font-size: 60px;
+  /* font-size: 4vh; */
 }
 
-.intro-content {
-  font-size: 40px;
+/* .intro-content {
+  font-size: 3vh;
+} */
+
+ @media only screen and (orientation: landscape) {
+  .name-message {
+    font-size: 3vw;
+  }
+
+  .intro-content {
+    font-size: 2.5vw;
+  }
 }
 
-@media only screen and (max-width: 920px) {
+
+@media only screen and (orientation: portrait) {
+  .name-message {
+    font-size: 3vh;
+  }
+
+  .intro-content {
+    font-size: 2.5vh;
+  }
+}
+
+/* @media only screen and (max-width: 920px) {
   .name-message {
     font-size: 2.9em;
   }
@@ -55,6 +76,6 @@
   .intro-content {
     font-size: 1.2em;
   }
-}
+} */
 
 
