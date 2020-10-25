@@ -14,7 +14,7 @@
   margin-top: 90px;
   background: rgb(182,193,194);
   background: linear-gradient(342deg, rgba(182,193,194,0.639093137254902) 0%, rgba(107,122,125,0.6054796918767507) 50%, rgba(182,193,194,1) 100%);
-  box-shadow: 0px 1px 1px rgba(000,000,000,0.8), inset 1px 2px 0px rgba(255,255,255,0.8);
+  box-shadow: 0px 1px 1px rgba(000,000,000,0.8), inset 1px 2px 0px rgba(255,255,255,0.8), inset 10px 0 5px -2px #888, inset -10px 0 5px -2px #888;;
 }
 
 .topComment {
@@ -64,6 +64,15 @@
   background: rgb(0,0,0);
   background: linear-gradient(275deg, rgba(0,0,0,0.639093137254902) 0%, rgba(51,43,43,1) 100%);
   box-shadow: 0px 1px 1px rgba(000,000,000,0.8), inset 1px 2px 0px rgba(255,255,255,0.8);
+  /* animation: strawAnimation 3s infinite ease-in-out; */
+}
+
+@keyframes strawAnimation {
+  0%   {transform: skew(-5deg) translateX(0)}
+  /* 25%  {transform: skew(-5deg) translateX(20px)} */
+  50%  {transform: skew(0deg) translateX(-100%)}
+  /* 75%  {transform: skew(-5deg) translateX(25px)} */
+  100% {transform: skew(-5deg) translateX(0)}
 }
 
 @media only screen and (min-width: 1000px) {

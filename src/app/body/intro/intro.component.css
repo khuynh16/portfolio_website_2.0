@@ -1,12 +1,13 @@
 .container {
   display: flex;
-  width: 95%;
-  /* height: 70vh; */
+  width: 100%;
+  height: 85vh;
   border: 2px solid black;
   border-bottom: 0;
   margin: auto;
   background-color: white;
   background-image: linear-gradient(white 0%, white 80%, #FFF5BA);
+  box-shadow: inset -60px 0px 30px -60px #888, inset 60px 0px 30px -60px #888;
 }
 
 .intro-message {
@@ -26,10 +27,6 @@
   margin-bottom: 40px;
   /* font-size: 4vh; */
 }
-
-/* .intro-content {
-  font-size: 3vh;
-} */
 
  @media only screen and (orientation: landscape) {
   .name-message {

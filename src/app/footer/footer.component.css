@@ -9,7 +9,10 @@
   border-radius: 0 0 90px 90px;
   background: rgb(175,98,31);
   background: linear-gradient(180deg, rgba(175,98,31,0.639093137254902) 0%, rgba(191,118,70,1) 100%);
-  box-shadow: 0px 1px 1px rgba(000,000,000,0.8), inset 1px 2px 0px rgba(255,255,255,0);
+  box-shadow: 0px 1px 1px rgba(000,000,000,0.8), 
+              inset 1px 2px 0px rgba(255,255,255,0), 
+              inset -60px 0px 30px -60px #888, 
+              inset 60px 0px 30px -60px #888;;
 }
 
 .boba-row, a {

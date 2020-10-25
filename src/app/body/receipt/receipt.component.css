@@ -1,11 +1,12 @@
 .container {
-  width: 95%;
+  width: 100%;
   height: auto;
   border: 2px solid black;
   border-top: 0;
   margin: auto;
   margin-top: -40px;
   background-color: #FFF5BA;
+  box-shadow: inset -60px 0px 30px -60px #888, inset 60px 0px 30px -60px #888;
 }
 
 .receiptOutline {
