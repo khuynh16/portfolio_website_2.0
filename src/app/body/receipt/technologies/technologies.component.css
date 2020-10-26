@@ -1,7 +1,9 @@
 .technologies {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  position: relative;
 }
 
 .technologiesColumns {
@@ -9,14 +11,11 @@
   text-align: center;
   width: 85%;
   margin: auto;
-  /* justify-content: space-evenly; */
-  /* margin: auto; */
 }
 
 .frontend,
 .backend,
 .deploymentAndTools {
-  /* border: 1px solid black; */
   flex-grow: 1;
   width: 33.3%;
 }
@@ -44,5 +43,29 @@ h3 {
 
   .deploymentAndTools {
     width: 80%;
+  }
+}
+
+.technologies:after {
+  animation: shine 8s ease-in infinite;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 50px;
+  height: 100%;
+  background: rgba(185, 185, 185, 0.4);
+  transform: skew(-10deg);
+}
+
+@keyframes shine {
+  0% {
+    left: -20%;
+  }
+  15% {
+    left: 400%;
+  }
+  100% {
+    left: 400%;
   }
 }

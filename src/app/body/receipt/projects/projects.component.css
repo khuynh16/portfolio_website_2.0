@@ -150,6 +150,10 @@ h3 {
     background-image: none;
   }
 
+  .overlay:hover {
+    border-radius: 25px;
+  }
+
   .firstProject img,
   .secondProject img,
   .thirdProject img {

@@ -12,11 +12,14 @@
 .receiptOutline {
   border: 1px solid black;
   width: 85%;
+  height: auto;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
   background-color: whitesmoke;
   border-radius: 5px;
+  position: relative;
+  overflow: hidden;
 }
 
 .dottedLine {
