@@ -4,7 +4,7 @@ Current rendition of my personal website, welcome! This will be the go-to site f
 
 ## Project Link
 
-Currently, the portfolio is hosted via AWS S3 @ kelvinahuynh.com.
+Currently, the portfolio is hosted via AWS S3 @ http://kelvinahuynh.com.
 
 ## Ideas for the Future
 
